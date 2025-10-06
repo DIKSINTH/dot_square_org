@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Utility to pause the CSS animation on hover */
+  .group:hover .group-hover\:\!animation-play-state\:paused {
+    animation-play-state: paused !important;
+  }
+}
