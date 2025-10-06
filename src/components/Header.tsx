@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import img from "../../public/images/logo.png";
 import {
   ChevronDown,
   Menu,
@@ -308,11 +309,7 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <img
-                src="../public/images/logo.png"
-                alt="Company Logo"
-                className="h-8 w-auto"
-              />
+              <img src={img} alt="Company Logo" className="h-8 w-auto" />
             </div>
           </div>
 
