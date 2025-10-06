@@ -92,13 +92,13 @@ const ServicesSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 sm:mb-16">
-          <p className="text-blue-500 text-sm sm:text-base font-semibold tracking-wider uppercase mb-3 sm:mb-4">
+          <p className="text-[#064354] text-sm sm:text-base font-semibold tracking-wider uppercase mb-3 sm:mb-4">
             SERVICES
           </p>
-          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6 px-4 leading-tight">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-[#064354] mb-4 sm:mb-6 px-4 leading-tight">
             Bridging Innovation & Excellence With Modern Tech Solutions
           </h1>
-          <p className="text-sm sm:text-base md:text-lg text-gray-700 max-w-4xl mx-auto px-4">
+          <p className="text-sm sm:text-base md:text-lg text-[#064354] max-w-4xl mx-auto px-4">
             We develop cutting-edge solutions and transform existing ones
             through collaborative development that prioritises your success.
           </p>
@@ -148,7 +148,7 @@ const ServicesSection = () => {
                     <button className="px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 bg-transparent border-2 border-white text-white rounded-full text-sm sm:text-base font-medium hover:bg-white hover:text-gray-900 transition-all duration-300">
                       Learn More
                     </button>
-                    <button className="px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 bg-blue-500 text-white rounded-full text-sm sm:text-base font-medium hover:bg-orange-600 transition-all duration-300 flex items-center gap-2">
+                    <button className="px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 bg-[#064354] text-white rounded-full text-sm sm:text-base font-medium hover:bg-orange-600 transition-all duration-300 flex items-center gap-2">
                       Contact Us
                       <ArrowRight className="w-4 h-4" />
                     </button>

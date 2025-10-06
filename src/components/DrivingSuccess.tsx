@@ -2,15 +2,15 @@ import React from "react";
 
 const DrivingSuccess = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 to-purple-900 text-white p-6 md:p-8 lg:p-12">
+    <div className="min-h-screen bg-gradient-to-br from-[#064354] to-[#064354] text-white p-6 md:p-8 lg:p-12">
       {/* Main Container */}
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16 lg:mb-20">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 bg-gradient-to-r from-[#064354] to-white bg-clip-text text-transparent">
             DRIVING SUCCESS
           </h1>
-          <p className="text-xl md:text-2xl lg:text-3xl text-blue-200 font-light">
+          <p className="text-xl md:text-2xl lg:text-3xl text-white font-light">
             Optimise Savings for Exponential Growth
           </p>
         </div>
@@ -51,7 +51,7 @@ const DrivingSuccess = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10 lg:gap-12">
           {/* Security Feature */}
-          <div className="bg-gradient-to-br from-blue-800/30 to-purple-800/30 rounded-2xl p-6 md:p-8 border border-white/20">
+          <div className="bg-gradient-to-br from-[#064354] to-[#064354] rounded-2xl p-6 md:p-8 border border-white/20">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-blue-300">
               Enterprise-Grade Security
             </h3>
@@ -63,7 +63,7 @@ const DrivingSuccess = () => {
           </div>
 
           {/* Investments Feature */}
-          <div className="bg-gradient-to-br from-blue-800/30 to-purple-800/30 rounded-2xl p-6 md:p-8 border border-white/20">
+          <div className="bg-gradient-to-br from-[#064354] to-[#064354] rounded-2xl p-6 md:p-8 border border-white/20">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-green-300">
               Smart Investments
             </h3>
@@ -75,7 +75,7 @@ const DrivingSuccess = () => {
           </div>
 
           {/* Performance Feature */}
-          <div className="bg-gradient-to-br from-blue-800/30 to-purple-800/30 rounded-2xl p-6 md:p-8 border border-white/20">
+          <div className="bg-gradient-to-br from-[#064354] to-[#064354] rounded-2xl p-6 md:p-8 border border-white/20">
             <h3 className="text-2xl md:text-3xl font-bold mb-4 text-yellow-300">
               Enhanced Efficiency & Performance
             </h3>

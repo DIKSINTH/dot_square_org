@@ -59,7 +59,7 @@ const Hero = () => {
 
       <div className="relative z-10 container mx-auto px-6 py-12 lg:py-20">
         {/* Company Logos */}
-        <div className="text-center mb-12">
+        {/* <div className="text-center mb-12">
           <div className="flex flex-wrap justify-center items-center gap-6 lg:gap-8 mb-8">
             {companyLogos.map((company, index) => (
               <div
@@ -78,14 +78,14 @@ const Hero = () => {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         {/* Hero Content */}
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
             Empowering Businesses With
           </h1>
-          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+          <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-12 bg-gradient-to-r from-[#064354] to-[#064354] bg-clip-text text-transparent">
             AI, Data Analytics & Cloud
           </h2>
 
@@ -99,10 +99,10 @@ const Hero = () => {
               {services.map((service, index) => (
                 <button
                   key={index}
-                  className="bg-transparent border border-gray-600 hover:border-blue-400 hover:bg-blue-400 hover:bg-opacity-10 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 group"
+                  className="bg-transparent border border-gray-600 hover:border-[#064354] hover:bg-[#064354] hover:bg-opacity-10 rounded-full px-6 py-3 text-sm font-medium transition-all duration-300 group"
                 >
                   <span className="mr-2 text-lg">{service.icon}</span>
-                  <span className="group-hover:text-blue-400">
+                  <span className="group-hover:text-[#064354]">
                     {service.name}
                   </span>
                 </button>
@@ -111,7 +111,7 @@ const Hero = () => {
           </div>
 
           {/* CTA Button */}
-          <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center space-x-2 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+          <button className="bg-[#064354] hover:bg-[#064354] text-white px-8 py-4 rounded-full text-lg font-semibold inline-flex items-center space-x-2 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
             <span>Let's Talk About Your Business</span>
             <ArrowRight className="w-5 h-5" />
           </button>

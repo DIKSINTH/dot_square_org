@@ -26,7 +26,7 @@ const CodeToSuccessSection = () => {
 
         {/* Button */}
         <div className="relative z-10">
-          <button className="flex items-center gap-2 bg-blue-500 text-white px-5 sm:px-6 lg:px-8 py-3 rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-orange-600 transition-colors">
+          <button className="flex items-center gap-2 bg-[#064354] text-white px-5 sm:px-6 lg:px-8 py-3 rounded-lg font-semibold text-sm sm:text-base lg:text-lg hover:bg-orange-600 transition-colors">
             Discuss Your Requirement!
             <ArrowRight className="w-5 h-5" />
           </button>

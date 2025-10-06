@@ -277,24 +277,24 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-black text-white relative">
+    <header className="w-full bg-white text-green relative">
       {/* Top Bar with Phone Numbers */}
-      <div className="bg-black border-b border-gray-800">
+      <div className="bg-white border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-end items-center h-10 text-xs sm:text-sm">
             <div className="flex flex-wrap items-center gap-3 sm:gap-6">
               <a
                 href="tel:+13015639488"
-                className="hover:text-blue-500 transition-colors hidden md:inline"
+                className="hover:text-[#064354] transition-colors hidden md:inline"
               >
-                <span className="text-blue-500 font-semibold">US</span> +1 301
+                <span className="text-[#064354] font-semibold">US</span> +1 301
                 563 9488
               </a>
               <a
                 href="tel:+919829029555"
-                className="hover:text-blue-500 transition-colors hidden lg:inline"
+                className="hover:text-[#064354] transition-colors hidden lg:inline"
               >
-                <span className="text-blue-500 font-semibold">IND</span> +91
+                <span className="text-[#064354] font-semibold">IND</span> +91
                 98290 29555
               </a>
             </div>
@@ -308,21 +308,11 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <div className="grid grid-cols-3 gap-0.5 w-6 h-6">
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-                <div className="bg-blue-500 w-1.5 h-1.5 rounded-sm"></div>
-              </div>
-              <span className="text-xl sm:text-2xl font-light">Dotsquares</span>
+              <img
+                src="../public/images/logo.png"
+                alt="Company Logo"
+                className="h-8 w-auto"
+              />
             </div>
           </div>
 
@@ -330,7 +320,7 @@ const Header = () => {
           <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2">
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
                 onMouseEnter={() => setActiveDropdown("services")}
               >
                 Services <ChevronDown className="w-4 h-4" />
@@ -340,12 +330,12 @@ const Header = () => {
                   className="absolute left-0 top-full pt-2 w-screen max-w-5xl -ml-32 z-50"
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <div className="bg-black border border-gray-800 rounded-lg shadow-2xl p-8">
+                  <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-8">
                     <div className="grid grid-cols-4 gap-8">
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Code className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Code className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {servicesMenu.title}
                           </h3>
                         </div>
@@ -356,7 +346,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -365,9 +355,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Settings className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Settings className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {enterpriseMenu.title}
                           </h3>
                         </div>
@@ -378,7 +368,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -387,9 +377,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Headphones className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Headphones className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {supportMenu.title}
                           </h3>
                         </div>
@@ -400,7 +390,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -409,9 +399,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Megaphone className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Megaphone className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {marketingMenu.title}
                           </h3>
                         </div>
@@ -422,7 +412,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -438,7 +428,7 @@ const Header = () => {
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
                 onMouseEnter={() => setActiveDropdown("cloud")}
               >
                 Cloud <ChevronDown className="w-4 h-4" />
@@ -448,13 +438,13 @@ const Header = () => {
                   className="absolute left-0 top-full pt-2 w-64 z-50"
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <div className="bg-black border border-gray-800 rounded-lg shadow-2xl p-6">
+                  <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-6">
                     <ul className="space-y-3">
                       {cloudMenu.map((item, idx) => (
                         <li key={idx}>
                           <Link
                             to={"/" + item.toLowerCase().replace(/\s+/g, "")}
-                            className="text-sm hover:text-blue-500 transition-colors block"
+                            className="text-sm hover:text-[#064354] transition-colors block"
                           >
                             {item}
                           </Link>
@@ -468,7 +458,7 @@ const Header = () => {
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
                 onMouseEnter={() => setActiveDropdown("dataai")}
               >
                 Data & AI <ChevronDown className="w-4 h-4" />
@@ -478,12 +468,12 @@ const Header = () => {
                   className="absolute left-0 top-full pt-2 w-screen max-w-3xl -ml-32 z-50"
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <div className="bg-black border border-gray-800 rounded-lg shadow-2xl p-8">
+                  <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-8">
                     <div className="grid grid-cols-2 gap-8">
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Database className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Database className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {dataAiMenu.data.title}
                           </h3>
                         </div>
@@ -494,7 +484,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -503,9 +493,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Cpu className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Cpu className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {dataAiMenu.ai.title}
                           </h3>
                         </div>
@@ -516,7 +506,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -531,7 +521,7 @@ const Header = () => {
             </div>
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
                 onMouseEnter={() => setActiveDropdown("security")}
               >
                 Security <ChevronDown className="w-4 h-4" />
@@ -541,13 +531,13 @@ const Header = () => {
                   className="absolute left-0 top-full pt-2 w-72 z-50"
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <div className="bg-black border border-gray-800 rounded-lg shadow-2xl p-6">
+                  <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-6">
                     <ul className="space-y-3">
                       {securityMenu.map((item, idx) => (
                         <li key={idx}>
                           <Link
                             to={"/" + item.toLowerCase().replace(/\s+/g, "")}
-                            className="text-sm hover:text-blue-500 transition-colors block"
+                            className="text-sm hover:text-[#064354] transition-colors block"
                           >
                             {item}
                           </Link>
@@ -561,7 +551,7 @@ const Header = () => {
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
                 onMouseEnter={() => setActiveDropdown("industries")}
               >
                 Industries <ChevronDown className="w-4 h-4" />
@@ -571,7 +561,7 @@ const Header = () => {
                   className="absolute left-0 top-full pt-2 w-screen max-w-4xl -ml-64 z-50"
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <div className="bg-black border border-gray-800 rounded-lg shadow-2xl p-8">
+                  <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-8">
                     <div className="grid grid-cols-4 gap-4">
                       {industriesMenu.map((industry, idx) => {
                         const Icon = industry.icon;
@@ -582,7 +572,7 @@ const Header = () => {
                               "/" +
                               industry.name.toLowerCase().replace(/\s+/g, "")
                             }
-                            className="flex items-center gap-2 px-3 py-2 hover:text-blue-500 transition-colors group"
+                            className="flex items-center gap-2 px-3 py-2 hover:text-[#064354] transition-colors group"
                           >
                             <Icon className="w-5 h-5 flex-shrink-0" />
                             <span className="text-sm">{industry.name}</span>
@@ -597,14 +587,14 @@ const Header = () => {
 
             <a
               href="#"
-              className="px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+              className="px-3 py-2 text-sm hover:text-[#064354] transition-colors"
             >
               On-Demand Developer
             </a>
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
                 onMouseEnter={() => setActiveDropdown("technologies")}
               >
                 Technologies <ChevronDown className="w-4 h-4" />
@@ -614,12 +604,12 @@ const Header = () => {
                   className="absolute left-0 top-full pt-2 w-screen max-w-6xl -ml-96 z-50"
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <div className="bg-black border border-gray-800 rounded-lg shadow-2xl p-8">
+                  <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-8">
                     <div className="grid grid-cols-3 gap-8">
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Smartphone className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Smartphone className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.mobileApps.title}
                           </h3>
                         </div>
@@ -631,7 +621,7 @@ const Header = () => {
                                   to={
                                     "/" + item.toLowerCase().replace(/\s+/g, "")
                                   }
-                                  className="text-sm hover:text-blue-500 transition-colors block"
+                                  className="text-sm hover:text-[#064354] transition-colors block"
                                 >
                                   {item}
                                 </Link>
@@ -641,9 +631,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <ShoppingCart className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <ShoppingCart className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.ecommerce.title}
                           </h3>
                         </div>
@@ -654,7 +644,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -663,9 +653,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Box className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Box className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.cms.title}
                           </h3>
                         </div>
@@ -676,7 +666,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -685,9 +675,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Code className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Code className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.customDevelopment.title}
                           </h3>
                         </div>
@@ -699,7 +689,7 @@ const Header = () => {
                                   to={
                                     "/" + item.toLowerCase().replace(/\s+/g, "")
                                   }
-                                  className="text-sm hover:text-blue-500 transition-colors block"
+                                  className="text-sm hover:text-[#064354] transition-colors block"
                                 >
                                   {item}
                                 </Link>
@@ -709,9 +699,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Layers className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Layers className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.fullStack.title}
                           </h3>
                         </div>
@@ -722,7 +712,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -731,9 +721,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Settings className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Settings className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.crm.title}
                           </h3>
                         </div>
@@ -744,7 +734,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -753,9 +743,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Gamepad2 className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Gamepad2 className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.games.title}
                           </h3>
                         </div>
@@ -766,7 +756,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -775,9 +765,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <CloudIcon className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <CloudIcon className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.cloud.title}
                           </h3>
                         </div>
@@ -788,7 +778,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -797,9 +787,9 @@ const Header = () => {
                         </ul>
                       </div>
                       <div>
-                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-blue-500">
-                          <Wrench className="w-5 h-5 text-blue-500" />
-                          <h3 className="text-blue-500 font-semibold">
+                        <div className="flex items-center gap-2 mb-4 pb-2 border-b border-[#064354]">
+                          <Wrench className="w-5 h-5 text-[#064354]" />
+                          <h3 className="text-[#064354] font-semibold">
                             {technologiesMenu.other.title}
                           </h3>
                         </div>
@@ -810,7 +800,7 @@ const Header = () => {
                                 to={
                                   "/" + item.toLowerCase().replace(/\s+/g, "")
                                 }
-                                className="text-sm hover:text-blue-500 transition-colors block"
+                                className="text-sm hover:text-[#064354] transition-colors block"
                               >
                                 {item}
                               </Link>
@@ -826,7 +816,7 @@ const Header = () => {
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
                 onMouseEnter={() => setActiveDropdown("success")}
               >
                 Success Stories <ChevronDown className="w-4 h-4" />
@@ -836,13 +826,13 @@ const Header = () => {
                   className="absolute left-0 top-full pt-2 w-48 z-50"
                   onMouseLeave={() => setActiveDropdown(null)}
                 >
-                  <div className="bg-black border border-gray-800 rounded-lg shadow-2xl p-4">
+                  <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-4">
                     <ul className="space-y-3">
                       {successStoriesMenu.map((item, idx) => (
                         <li key={idx}>
                           <Link
                             to={"/" + item.toLowerCase().replace(/\s+/g, "")}
-                            className="text-sm hover:text-blue-500 transition-colors block"
+                            className="text-sm hover:text-[#064354] transition-colors block"
                           >
                             {item}
                           </Link>
@@ -858,18 +848,18 @@ const Header = () => {
           {/* Right Side Actions */}
           <div className="flex items-center gap-3">
             <button
-              className="p-2 hover:text-blue-500 transition-colors hidden lg:block"
+              className="p-2 hover:text-[#064354] transition-colors hidden lg:block"
               onClick={() => setHamburgerMenuOpen(!hamburgerMenuOpen)}
             >
               <Menu className="w-5 h-5" />
             </button>
             <button
-              className="p-2 hover:text-blue-500 transition-colors hidden lg:block"
+              className="p-2 hover:text-[#064354] transition-colors hidden lg:block"
               onClick={() => setSearchOpen(!searchOpen)}
             >
               <Search className="w-5 h-5" />
             </button>
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 sm:px-6 py-2 rounded-full text-sm font-medium transition-colors">
+            <button className="bg-[#064354] hover:bg-[#0a5e75] text-white px-4 sm:px-6 py-2 rounded-full text-sm font-medium transition-colors">
               Contact us
             </button>
             <button

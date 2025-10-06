@@ -41,7 +41,7 @@ const AchievementsSection: React.FC = () => {
     <section className="w-full py-12 px-6 md:px-12 lg:px-20 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
         {/* Small Title */}
-        <p className="text-blue-500 font-semibold text-sm md:text-base mb-2">
+        <p className="text-[#064354] font-semibold text-sm md:text-base mb-2">
           ACHIEVEMENTS
         </p>
 

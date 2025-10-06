@@ -79,14 +79,14 @@ const AISolutionsSection = () => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="mb-8">
-          <p className="text-blue-500 text-sm font-semibold tracking-wide uppercase mb-4">
+          <p className="text-[#064354] text-sm font-semibold tracking-wide uppercase mb-4">
             CUSTOM AI SOLUTIONS
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
             Creating Future-Ready AI
             <br />
             Solutions with{" "}
-            <span className="text-blue-500 transition-opacity duration-500">
+            <span className="text-[#064354] transition-opacity duration-500">
               {rotatingTexts[currentTextIndex]}
             </span>
           </h1>
@@ -139,7 +139,7 @@ const AISolutionsSection = () => {
             <div className="space-y-4">
               {currentContent.features.map((feature, index) => (
                 <div key={index} className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center mt-1">
+                  <div className="flex-shrink-0 w-6 h-6 bg-[#064354] rounded-full flex items-center justify-center mt-1">
                     <Check className="w-4 h-4 text-white stroke-[3]" />
                   </div>
                   <p className="text-gray-900 text-lg font-medium">{feature}</p>
@@ -147,7 +147,7 @@ const AISolutionsSection = () => {
               ))}
             </div>
 
-            <button className="flex items-center gap-2 bg-blue-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors group">
+            <button className="flex items-center gap-2 bg-[#064354] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors group">
               Know More
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>

@@ -20,7 +20,7 @@ const CommonForm: FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-blue-500 font-semibold text-sm uppercase">
+          <p className="text-[#064354] font-semibold text-sm uppercase">
             Web Development Solution
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -79,7 +79,7 @@ const CommonForm: FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-blue-500 font-semibold text-xl mb-2">
+          <h3 className="text-[#064354] font-semibold text-xl mb-2">
             Book Free Consultation
           </h3>
           <p className="text-gray-300 mb-6 text-sm">
@@ -91,13 +91,13 @@ const CommonForm: FC = () => {
               <input
                 type="text"
                 placeholder="Full Name*"
-                className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#064354] transition"
                 required
               />
               <input
                 type="email"
                 placeholder="Email*"
-                className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#064354] transition"
                 required
               />
             </div>
@@ -105,23 +105,23 @@ const CommonForm: FC = () => {
               <input
                 type="text"
                 placeholder="Phone Number*"
-                className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#064354] transition"
                 required
               />
               <input
                 type="text"
                 placeholder="Company Name"
-                className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                className="w-full px-4 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#064354] transition"
               />
             </div>
             <textarea
               placeholder="Your Requirement*"
-              className="w-full px-4 py-3 rounded-lg h-32 resize-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+              className="w-full px-4 py-3 rounded-lg h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#064354] transition"
               required
             ></textarea>
             <button
               type="submit"
-              className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-lg transition-transform transform hover:scale-105"
+              className="w-full bg-[#064354] hover:bg-[#064354] text-white font-semibold py-3 rounded-lg transition-transform transform hover:scale-105"
             >
               Submit Your Requirement!
             </button>
@@ -138,15 +138,15 @@ const CommonForm: FC = () => {
         viewport={{ once: true }}
       >
         <div>
-          <p className="text-3xl font-bold text-blue-500">600+</p>
+          <p className="text-3xl font-bold text-[#064354]">600+</p>
           <p className="text-sm">In-House Web/App Developers</p>
         </div>
         <div>
-          <p className="text-3xl font-bold text-blue-500">70%</p>
+          <p className="text-3xl font-bold text-[#064354]">70%</p>
           <p className="text-sm">Average Savings on Development Costs</p>
         </div>
         <div>
-          <p className="text-3xl font-bold text-blue-500">14K+</p>
+          <p className="text-3xl font-bold text-[#064354]">14K+</p>
           <p className="text-sm">Websites Developed in last 2 decades</p>
         </div>
       </motion.div>

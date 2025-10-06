@@ -11,19 +11,19 @@ import {
 
 export default function AboutSection() {
   return (
-    <section className="bg-black text-white py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-white text-[#064354] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Left Column - About Us */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h3 className="text-blue-500 text-sm font-semibold tracking-wider uppercase">
+              <h3 className="text-[#064354] text-sm font-semibold tracking-wider uppercase">
                 ABOUT US
               </h3>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                 Built Relationships With 15,000+ Happy Clients
               </h2>
-              <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
+              <p className="text-[#064354] text-base sm:text-lg leading-relaxed">
                 Trusted by more than 15,000+ satisfied clients, we consistently
                 deliver proven results through timely execution and exceptional
                 service.
@@ -35,12 +35,12 @@ export default function AboutSection() {
               {/* Stat 1 */}
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <Users className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
+                  <Users className="w-8 h-8 text-[#064354]" strokeWidth={1.5} />
+                  <span className="text-4xl sm:text-5xl font-bold text-[#064354]">
                     1,000+
                   </span>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
+                <p className="text-[#064354] text-sm sm:text-base">
                   Full Time Technical Team
                 </p>
               </div>
@@ -48,12 +48,12 @@ export default function AboutSection() {
               {/* Stat 2 */}
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <Star className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
+                  <Star className="w-8 h-8 text-[#064354]" strokeWidth={1.5} />
+                  <span className="text-4xl sm:text-5xl font-bold text-[#064354]">
                     15,000+
                   </span>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
+                <p className="text-[#064354] text-sm sm:text-base">
                   Happy Clients
                 </p>
               </div>
@@ -62,14 +62,14 @@ export default function AboutSection() {
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
                   <CheckCircle
-                    className="w-8 h-8 text-white"
+                    className="w-8 h-8 text-[#064354]"
                     strokeWidth={1.5}
                   />
-                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
+                  <span className="text-4xl sm:text-5xl font-bold text-[#064354]">
                     27,000+
                   </span>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
+                <p className="text-[#064354] text-sm sm:text-base">
                   Successful Projects
                 </p>
               </div>
@@ -77,12 +77,15 @@ export default function AboutSection() {
               {/* Stat 4 */}
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <Trophy className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
+                  <Trophy
+                    className="w-8 h-8 text-[#064354]"
+                    strokeWidth={1.5}
+                  />
+                  <span className="text-4xl sm:text-5xl font-bold text-[#064354]">
                     95%
                   </span>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
+                <p className="text-[#064354] text-sm sm:text-base">
                   Customer Satisfaction
                 </p>
               </div>
@@ -90,12 +93,15 @@ export default function AboutSection() {
               {/* Stat 5 */}
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <Lightbulb className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
+                  <Lightbulb
+                    className="w-8 h-8 text-[#064354]"
+                    strokeWidth={1.5}
+                  />
+                  <span className="text-4xl sm:text-5xl font-bold text-[#064354]">
                     23+
                   </span>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
+                <p className="text-[#064354] text-sm sm:text-base">
                   Years of Experience
                 </p>
               </div>
@@ -103,12 +109,12 @@ export default function AboutSection() {
               {/* Stat 6 */}
               <div className="space-y-2">
                 <div className="flex items-center gap-3">
-                  <Globe className="w-8 h-8 text-white" strokeWidth={1.5} />
-                  <span className="text-4xl sm:text-5xl font-bold text-blue-500">
+                  <Globe className="w-8 h-8 text-[#064354]" strokeWidth={1.5} />
+                  <span className="text-4xl sm:text-5xl font-bold text-[#064354]">
                     6+
                   </span>
                 </div>
-                <p className="text-gray-300 text-sm sm:text-base">
+                <p className="text-[#064354] text-sm sm:text-base">
                   Offices Worldwide
                 </p>
               </div>
@@ -118,13 +124,13 @@ export default function AboutSection() {
           {/* Right Column - TechSquares */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h3 className="text-blue-500 text-sm font-semibold tracking-wider uppercase">
+              <h3 className="text-white text-sm font-semibold tracking-wider uppercase">
                 TECHSQUARES
               </h3>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
                 Unveiling the Digital Landscape
               </h2>
-              <button className="flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors text-lg font-semibold group">
+              <button className="flex items-center gap-2 text-[#064354] hover:text-[#064354] transition-colors text-lg font-semibold group">
                 <BookOpen className="w-5 h-5" />
                 <span>Read Now</span>
               </button>
@@ -139,7 +145,7 @@ export default function AboutSection() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
-                <div className="text-blue-500 font-bold text-lg">
+                <div className="text-[#064354] font-bold text-lg">
                   TECHSQUARES
                 </div>
                 <div className="text-white font-bold text-5xl sm:text-6xl lg:text-7xl">
