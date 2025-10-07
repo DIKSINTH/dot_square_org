@@ -2,15 +2,15 @@ import React from "react";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
-  const companyLogos = [
-    { name: "Gartner", rating: "5.0", stars: 5 },
-    { name: "Google", rating: "4.6", stars: 4.5 },
-    { name: "Trustpilot", rating: "4.8", stars: 5 },
-    { name: "HubSpot", rating: "5.0", stars: 5 },
-    { name: "Clutch", rating: "4.6", stars: 4.5 },
-    { name: "Salesforce", rating: "5.0", stars: 5 },
-    { name: "G2", rating: "4.5", stars: 4.5 },
-  ];
+  // const companyLogos = [
+  //   { name: "Gartner", rating: "5.0", stars: 5 },
+  //   { name: "Google", rating: "4.6", stars: 4.5 },
+  //   { name: "Trustpilot", rating: "4.8", stars: 5 },
+  //   { name: "HubSpot", rating: "5.0", stars: 5 },
+  //   { name: "Clutch", rating: "4.6", stars: 4.5 },
+  //   { name: "Salesforce", rating: "5.0", stars: 5 },
+  //   { name: "G2", rating: "4.5", stars: 4.5 },
+  // ];
 
   const services = [
     { icon: "💻", name: "Software Development" },
@@ -23,27 +23,27 @@ const Hero = () => {
     { icon: "☁️", name: "Salesforce Solutions" },
   ];
 
-  const renderStars = (rating: number) => {
-    const stars = [];
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
+  // const renderStars = (rating: number) => {
+  //   const stars = [];
+  //   const fullStars = Math.floor(rating);
+  //   const hasHalfStar = rating % 1 !== 0;
 
-    for (let i = 0; i < fullStars; i++) {
-      stars.push(
-        <span key={i} className="text-yellow-400">
-          ★
-        </span>
-      );
-    }
-    if (hasHalfStar) {
-      stars.push(
-        <span key="half" className="text-yellow-400">
-          ⭐
-        </span>
-      );
-    }
-    return stars;
-  };
+  //   for (let i = 0; i < fullStars; i++) {
+  //     stars.push(
+  //       <span key={i} className="text-yellow-400">
+  //         ★
+  //       </span>
+  //     );
+  //   }
+  //   if (hasHalfStar) {
+  //     stars.push(
+  //       <span key="half" className="text-yellow-400">
+  //         ⭐
+  //       </span>
+  //     );
+  //   }
+  //   return stars;
+  // };
 
   return (
     <section className="relative min-h-screen bg-gray-900 text-white overflow-hidden">
