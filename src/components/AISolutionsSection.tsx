@@ -132,7 +132,7 @@ const AISolutionsSection = () => {
         {/* Content */}
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
           <div className="space-y-8">
-            <p className="text-gray-700 text-lg leading-relaxed">
+            <p className="text-[#064354] text-lg leading-relaxed">
               {currentContent.description}
             </p>
 
@@ -142,12 +142,14 @@ const AISolutionsSection = () => {
                   <div className="flex-shrink-0 w-6 h-6 bg-[#064354] rounded-full flex items-center justify-center mt-1">
                     <Check className="w-4 h-4 text-white stroke-[3]" />
                   </div>
-                  <p className="text-gray-900 text-lg font-medium">{feature}</p>
+                  <p className="text-[#064354] text-lg font-medium">
+                    {feature}
+                  </p>
                 </div>
               ))}
             </div>
 
-            <button className="flex items-center gap-2 bg-[#064354] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-600 transition-colors group">
+            <button className="flex items-center gap-2 bg-[#064354] text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-[#0d586d] transition-colors group">
               Know More
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>

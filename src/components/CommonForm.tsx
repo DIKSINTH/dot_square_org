@@ -20,7 +20,7 @@ const CommonForm: FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <p className="text-[#064354] font-semibold text-sm uppercase">
+          <p className="text-[#ffffff] font-semibold text-sm uppercase">
             Web Development Solution
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
@@ -79,7 +79,7 @@ const CommonForm: FC = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-[#064354] font-semibold text-xl mb-2">
+          <h3 className="text-[#e2e2e2] font-semibold text-xl mb-2">
             Book Free Consultation
           </h3>
           <p className="text-gray-300 mb-6 text-sm">

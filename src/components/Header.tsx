@@ -4,7 +4,7 @@ import img from "../../public/images/logo.png";
 import {
   ChevronDown,
   Menu,
-  Search,
+  // Search,
   X,
   Code,
   Settings,
@@ -39,7 +39,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [hamburgerMenuOpen, setHamburgerMenuOpen] = useState(false);
-  const [searchOpen, setSearchOpen] = useState(false);
+  // const [searchOpen, setSearchOpen] = useState(false);
 
   const toggleDropdown = (menu: string) => {
     setActiveDropdown(activeDropdown === menu ? null : menu);
@@ -850,12 +850,12 @@ const Header = () => {
             >
               <Menu className="w-5 h-5" />
             </button>
-            <button
+            {/* <button
               className="p-2 hover:text-[#064354] transition-colors hidden lg:block"
               onClick={() => setSearchOpen(!searchOpen)}
             >
               <Search className="w-5 h-5" />
-            </button>
+            </button> */}
             <button className="bg-[#064354] hover:bg-[#0a5e75] text-white px-4 sm:px-6 py-2 rounded-full text-sm font-medium transition-colors">
               Contact us
             </button>
@@ -874,7 +874,7 @@ const Header = () => {
       </div>
 
       {/* Search Bar Overlay */}
-      {searchOpen && (
+      {/* {searchOpen && (
         <div className="absolute top-full left-0 w-full bg-black border-t border-gray-800 z-50 shadow-2xl">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
             <div className="relative">
@@ -885,7 +885,7 @@ const Header = () => {
                 autoFocus
               />
               <button
-                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-blue-500"
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400 hover:text-[#064354]"
                 onClick={() => setSearchOpen(false)}
               >
                 <X className="w-5 h-5" />
@@ -893,17 +893,17 @@ const Header = () => {
             </div>
           </div>
         </div>
-      )}
+      )} */}
 
       {/* Hamburger Menu Panel */}
       {hamburgerMenuOpen && (
-        <div className="absolute top-full right-0 w-80 bg-black border-l border-gray-800 z-50 shadow-2xl">
+        <div className="absolute top-full right-0 w-80 bg-white border-l border-gray-800 z-50 shadow-2xl">
           <div className="p-6">
             <div className="flex items-center justify-between mb-6">
               <h3 className="text-lg font-semibold">Menu</h3>
               <button
                 onClick={() => setHamburgerMenuOpen(false)}
-                className="hover:text-blue-500"
+                className="hover:text-[#064354]"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -913,7 +913,7 @@ const Header = () => {
                 <li key={idx}>
                   <Link
                     to={"/" + item.toLowerCase().replace(/\s+/g, "")}
-                    className="text-sm hover:text-blue-500 transition-colors block"
+                    className="text-sm hover:text-[#064354] transition-colors block"
                   >
                     {item}
                   </Link>
@@ -931,7 +931,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => toggleDropdown("services")}
-                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-[#064354] transition-colors"
               >
                 Services{" "}
                 <ChevronDown
@@ -943,7 +943,7 @@ const Header = () => {
               {activeDropdown === "services" && (
                 <div className="pl-4 py-2 space-y-4">
                   <div>
-                    <h4 className="text-blue-500 font-semibold text-sm mb-2">
+                    <h4 className="text-[#064354] font-semibold text-sm mb-2">
                       {servicesMenu.title}
                     </h4>
                     <ul className="space-y-2">
@@ -960,7 +960,7 @@ const Header = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-blue-500 font-semibold text-sm mb-2">
+                    <h4 className="text-[#064354] font-semibold text-sm mb-2">
                       {enterpriseMenu.title}
                     </h4>
                     <ul className="space-y-2">
@@ -983,7 +983,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => toggleDropdown("cloud")}
-                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-[#064354] transition-colors"
               >
                 Cloud{" "}
                 <ChevronDown
@@ -1013,7 +1013,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => toggleDropdown("dataai")}
-                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-[#064354] transition-colors"
               >
                 Data & AI{" "}
                 <ChevronDown
@@ -1025,7 +1025,7 @@ const Header = () => {
               {activeDropdown === "dataai" && (
                 <div className="pl-4 py-2 space-y-4">
                   <div>
-                    <h4 className="text-blue-500 font-semibold text-sm mb-2">
+                    <h4 className="text-[#064354] font-semibold text-sm mb-2">
                       {dataAiMenu.data.title}
                     </h4>
                     <ul className="space-y-2">
@@ -1042,7 +1042,7 @@ const Header = () => {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="text-blue-500 font-semibold text-sm mb-2">
+                    <h4 className="text-[#064354] font-semibold text-sm mb-2">
                       {dataAiMenu.ai.title}
                     </h4>
                     <ul className="space-y-2">
@@ -1065,7 +1065,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => toggleDropdown("security")}
-                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-[#064354] transition-colors"
               >
                 Security{" "}
                 <ChevronDown
@@ -1095,7 +1095,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => toggleDropdown("industries")}
-                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-[#064354] transition-colors"
               >
                 Industries{" "}
                 <ChevronDown
@@ -1124,7 +1124,7 @@ const Header = () => {
 
             <a
               href="#"
-              className="block px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+              className="block px-3 py-2 text-sm hover:text-[#064354] transition-colors"
             >
               On-Demand Developer
             </a>
@@ -1132,7 +1132,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => toggleDropdown("technologies")}
-                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-[#064354] transition-colors"
               >
                 Technologies{" "}
                 <ChevronDown
@@ -1144,7 +1144,7 @@ const Header = () => {
               {activeDropdown === "technologies" && (
                 <div className="pl-4 py-2 space-y-4">
                   <div>
-                    <h4 className="text-blue-500 font-semibold text-sm mb-2">
+                    <h4 className="text-[#064354] font-semibold text-sm mb-2">
                       {technologiesMenu.mobileApps.title}
                     </h4>
                     <ul className="space-y-2">
@@ -1167,7 +1167,7 @@ const Header = () => {
             <div>
               <button
                 onClick={() => toggleDropdown("success")}
-                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-blue-500 transition-colors"
+                className="flex items-center justify-between w-full px-3 py-2 text-sm hover:text-[#064354] transition-colors"
               >
                 Success Stories{" "}
                 <ChevronDown
@@ -1193,10 +1193,6 @@ const Header = () => {
                 </div>
               )}
             </div>
-
-            <button className="w-full mt-4 p-2 hover:text-blue-500 transition-colors flex items-center justify-center gap-2">
-              <Search className="w-5 h-5" /> Search
-            </button>
           </div>
         </div>
       )}

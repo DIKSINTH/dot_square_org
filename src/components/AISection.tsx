@@ -118,7 +118,7 @@ const AISection = () => {
             </ul>
 
             {/* CTA Button */}
-            <button className="inline-flex items-center justify-center bg-[#0059ff] hover:bg-[#0059ff] text-white font-semibold px-8 py-4 text-base md:text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group">
+            <button className="inline-flex items-center justify-center bg-[#064354] hover:bg-[#12657c] text-white font-semibold px-8 py-4 text-base md:text-lg rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group">
               Know More
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>

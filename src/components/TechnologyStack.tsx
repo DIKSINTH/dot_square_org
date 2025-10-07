@@ -151,7 +151,7 @@ const row3Technologies: Technology[] = [
 const TechnologyBadge = ({ name, icon }: Technology) => (
   <div className="flex items-center gap-3 bg-white px-6 py-4 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 whitespace-nowrap min-w-fit">
     <img src={icon} alt={name} className="w-6 h-6 object-contain" />
-    <span className="text-gray-900 font-medium text-base">{name}</span>
+    <span className="text-[#064354] font-medium text-base">{name}</span>
   </div>
 );
 
@@ -212,7 +212,7 @@ const TechnologyStack = () => {
     <section className="bg-black py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-100vw mx-auto">
         <div className="text-center mb-12">
-          <p className="text-blue-500 text-sm font-semibold tracking-wide uppercase mb-3">
+          <p className="text-white text-sm font-semibold tracking-wide uppercase mb-3">
             TECHNOLOGIES
           </p>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">

@@ -40,7 +40,7 @@ const PartnersSection = () => {
   return (
     <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20 text-center">
       {/* Small header */}
-      <p className="text-blue-500 font-semibold uppercase tracking-wide">
+      <p className="text-[#064354] font-semibold uppercase tracking-wide">
         Achievements
       </p>
 
@@ -50,7 +50,7 @@ const PartnersSection = () => {
       </h2>
 
       {/* Subtext */}
-      <p className="mt-4 text-gray-600 max-w-3xl mx-auto text-sm md:text-base">
+      <p className="mt-4 text-[#064354] max-w-3xl mx-auto text-sm md:text-base">
         With a history of excellence and innovation, we’ve been honored with
         several significant awards and partnered with leading technologies.
       </p>

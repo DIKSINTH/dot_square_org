@@ -8,7 +8,9 @@ import TechStackSection from "../components/TechStackSection";
 import DotSquaresAdvantages from "../components/DotSquaresAdvantages";
 import HiringAssistanceSection from "../components/HiringAssistanceSection";
 import AgileDevelopmentProcess from "../components/AgileDevelopmentProcess";
-import NotSureSection from "../components/HelpSection";
+import ClientRelationshipsSection from "../components/ClientRelationshipsSection";
+import Achievements from "../components/Achievements";
+import FAQ from "../components/FAQ";
 
 const WebDevelopment: React.FC = () => {
   return (
@@ -22,7 +24,9 @@ const WebDevelopment: React.FC = () => {
       <DotSquaresAdvantages />
       <HiringAssistanceSection />
       <AgileDevelopmentProcess />
-      <NotSureSection />
+      <ClientRelationshipsSection />
+      <Achievements />
+      <FAQ />
     </div>
   );
 };

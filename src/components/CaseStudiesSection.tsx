@@ -111,7 +111,7 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ study }) => {
       <div className="relative p-6 h-full flex flex-col justify-between">
         {/* Category & Title */}
         <div>
-          <p className="text-xs font-semibold text-blue-400 mb-2 uppercase tracking-widest opacity-80 transition-opacity duration-300 group-hover:opacity-100">
+          <p className="text-xs font-semibold text-[#064354] mb-2 uppercase tracking-widest opacity-80 transition-opacity duration-300 group-hover:opacity-100">
             {category}
           </p>
           <h3 className="text-xl md:text-2xl font-bold text-white leading-snug transition-transform duration-300 group-hover:translate-y-[-5px]">
@@ -153,7 +153,7 @@ const CaseStudiesSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header/Title Section */}
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-sm uppercase text-blue-400 tracking-[0.25em] font-semibold mb-2">
+          <p className="text-sm uppercase text-white tracking-[0.25em] font-semibold mb-2">
             CASE STUDIES
           </p>
           <h2 className="text-4xl sm:text-5xl font-extrabold text-white mb-4">

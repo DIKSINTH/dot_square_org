@@ -46,12 +46,12 @@ const AchievementsSection: React.FC = () => {
         </p>
 
         {/* Main Heading */}
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#064354] mb-4">
           Recognised for Excellence in Web Development
         </h2>
 
         {/* Description */}
-        <p className="text-gray-600 max-w-3xl mx-auto mb-10 text-sm md:text-base">
+        <p className="text-[#064354] max-w-3xl mx-auto mb-10 text-sm md:text-base">
           Dotsquares, a recognised industry leader, is the preferred partner for
           Fortune 500 firms, SMEs agencies, and startups seeking access to the
           top 1% of developers. We specialise in developing bespoke IT solutions

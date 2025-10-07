@@ -21,9 +21,9 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="Enter your mail id"
-                className="w-full sm:w-2/3 p-3 bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full sm:w-2/3 p-3 bg-white text-black border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#064354]"
               />
-              <button className="w-full sm:w-1/3 p-3 bg-blue-600 text-white font-semibold hover:bg-orange-500 transition-colors">
+              <button className="w-full sm:w-1/3 p-3 bg-[#064354] text-white font-semibold hover:bg-[#064354]/80 transition-colors">
                 Subscribe
               </button>
             </div>
@@ -31,13 +31,13 @@ const Footer = () => {
               <label className="flex items-start">
                 <input
                   type="checkbox"
-                  className="mr-2 mt-1 accent-blue-600"
+                  className="mr-2 mt-1 accent-[#064354]"
                   defaultChecked
                 />
                 <span className="leading-relaxed">
                   I agree to receive promotional emails and updates from
                   Dotsquares.
-                  <a href="#" className="underline hover:text-blue-500">
+                  <a href="#" className="underline hover:text-[#064354]">
                     Privacy Policy
                   </a>
                 </span>
@@ -51,7 +51,7 @@ const Footer = () => {
               <a
                 key={item}
                 href="#"
-                className="mb-2 hover:text-blue-500 transition-colors"
+                className="mb-2 hover:text-[#064354] transition-colors"
               >
                 {item}
               </a>
@@ -60,7 +60,7 @@ const Footer = () => {
               <a
                 key={item}
                 href="#"
-                className="mb-2 hover:text-blue-500 transition-colors"
+                className="mb-2 hover:text-[#064354] transition-colors"
               >
                 {item}
               </a>
@@ -69,7 +69,7 @@ const Footer = () => {
               <a
                 key={item}
                 href="#"
-                className="mb-2 hover:text-blue-500 transition-colors"
+                className="mb-2 hover:text-[#064354] transition-colors"
               >
                 {item}
               </a>
@@ -153,25 +153,25 @@ const Footer = () => {
               <div className="flex space-x-4 pt-2">
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-500 transition-colors text-lg"
+                  className="text-gray-400 hover:text-[#064354] transition-colors text-lg"
                 >
                   <FaFacebookF />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-500 transition-colors text-lg"
+                  className="text-gray-400 hover:text-[#064354] transition-colors text-lg"
                 >
                   <FaTwitter />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-500 transition-colors text-lg"
+                  className="text-gray-400 hover:text-[#064354] transition-colors text-lg"
                 >
                   <FaInstagram />
                 </a>
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-500 transition-colors text-lg"
+                  className="text-gray-400 hover:text-[#064354] transition-colors text-lg"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -187,16 +187,16 @@ const Footer = () => {
             {/* Left/Top Legal Links and Registration Info */}
             <div className="mb-4 lg:mb-0 text-sm">
               <div className="flex flex-wrap gap-x-4 mb-2 font-semibold text-gray-300">
-                <a href="#" className="hover:text-blue-500">
+                <a href="#" className="hover:text-[#064354]">
                   Terms of Use
                 </a>
-                <a href="#" className="hover:text-blue-500">
+                <a href="#" className="hover:text-[#064354]">
                   Privacy
                 </a>
-                <a href="#" className="hover:text-blue-500">
+                <a href="#" className="hover:text-[#064354]">
                   Terms & Conditions
                 </a>
-                <a href="#" className="hover:text-blue-500">
+                <a href="#" className="hover:text-[#064354]">
                   Shipping Policy
                 </a>
               </div>

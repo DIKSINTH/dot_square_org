@@ -54,7 +54,7 @@ const IconDedicatedHiring: React.FC<React.SVGProps<SVGSVGElement>> = (
 const ArrowPointer: React.FC = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-4 w-4 text-blue-500 flex-shrink-0 mt-1"
+    className="h-4 w-4 text-[#064354] flex-shrink-0 mt-1"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -137,23 +137,23 @@ const ModelCard: React.FC<ModelCardProps> = ({ model, isDedicated }) => {
       {/* Content */}
       <div className="p-6 sm:p-8 flex-grow flex flex-col">
         <div className="flex items-center mb-4">
-          <Icon className="h-6 w-6 text-blue-500" />
-          <h3 className="ml-3 text-xl font-bold text-gray-800">{type}</h3>
+          <Icon className="h-6 w-6 text-[#064354]" />
+          <h3 className="ml-3 text-xl font-bold text-[#064354]">{type}</h3>
         </div>
-        <p className="text-sm text-gray-500 mb-6">{description}</p>
+        <p className="text-sm text-[#064354] mb-6">{description}</p>
         <ul className="space-y-4 mb-8 flex-grow">
           {features.map((feature, index) => (
             <li key={index} className="flex items-start">
               <ArrowPointer />
-              <p className="ml-3 text-sm text-gray-700">{feature}</p>
+              <p className="ml-3 text-sm text-[#064354]">{feature}</p>
             </li>
           ))}
         </ul>
         <div className="mt-auto pt-6 border-t border-gray-100">
-          <p className="text-sm text-gray-500 mb-4">{footerText}</p>
+          <p className="text-sm text-[#064354] mb-4">{footerText}</p>
           <a
             href="#"
-            className="flex items-center text-sm font-semibold text-blue-500 hover:text-blue-600 transition-colors"
+            className="flex items-center text-sm font-semibold text-[#064354] hover:text-[#064354] transition-colors"
           >
             Explore more
             <svg
@@ -182,7 +182,7 @@ const HiringAssistanceSection: React.FC = () => {
     <section className="bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="text-center pb-12 sm:pb-16 text-white">
-          <span className="text-sm font-semibold uppercase tracking-wider text-blue-500">
+          <span className="text-sm font-semibold uppercase tracking-wider text-white">
             HIRE AS PER YOUR REQUIREMENT
           </span>
           <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight">

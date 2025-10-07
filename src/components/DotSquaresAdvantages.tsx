@@ -155,12 +155,12 @@ const AdvantageCard = ({ icon: Icon, title, description }) => {
   return (
     <div
       className="bg-gray-800 p-6 sm:p-8 rounded-lg transition-all duration-300 transform 
-                 hover:shadow-xl hover:bg-gray-700/90 border border-transparent hover:border-blue-500"
+                 hover:shadow-xl hover:bg-gray-700/90 border border-transparent hover:border-[#064354]"
     >
       {/* Icon and Title */}
       <div className="flex items-start mb-4">
         <div className="flex-shrink-0">
-          <Icon className="h-10 w-10 text-blue-500" />
+          <Icon className="h-10 w-10 text-[#064354]" />
         </div>
         <h3 className="ml-4 text-xl font-bold text-white pt-1">{title}</h3>
       </div>
@@ -177,7 +177,7 @@ const DotSquaresAdvantages = () => {
     <section className="py-16 sm:py-20 lg:py-24 bg-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Header */}
-        <span className="text-sm font-semibold uppercase tracking-wider text-blue-500">
+        <span className="text-sm font-semibold uppercase tracking-wider text-[#064354]">
           WHY CHOOSE US
         </span>
         <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">

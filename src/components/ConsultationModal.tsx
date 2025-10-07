@@ -74,7 +74,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
         <div className="flex justify-between items-center p-6 border-b">
           <div>
             <h2 className="text-3xl font-bold text-gray-900">
-              Your <span className="text-blue-500">Growth Partner</span> in
+              Your <span className="text-[#064354]">Growth Partner</span> in
             </h2>
             <h3 className="text-3xl font-bold text-gray-900">
               Digital Innovation
@@ -93,7 +93,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
             {/* X Close button */}
             <button
               onClick={onClose}
-              className="p-2 hover:bg-gray-100 rounded-full transition-colors"
+              className="p-2 hover:bg-[#064354] rounded-full transition-colors"
               aria-label="Close modal"
             >
               <X className="w-6 h-6" />
@@ -108,13 +108,13 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="flex items-center mb-2">
-                  <DollarSign className="w-6 h-6 text-blue-500 mr-2" />
-                  <span className="text-blue-500 text-2xl font-bold">💰</span>
+                  <DollarSign className="w-6 h-6 text-[#064354] mr-2" />
+                  <span className="text-[#064354] text-2xl font-bold">💰</span>
                 </div>
                 <h4 className="font-bold text-gray-900 mb-2">
                   Save Up to 35% on Development Costs
                 </h4>
-                <p className="text-gray-600 text-sm">
+                <p className="text-[#064354] text-sm">
                   Get high-quality solutions without the high overheads —
                   efficient delivery at a fraction of traditional costs.
                 </p>
@@ -122,13 +122,13 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
 
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="flex items-center mb-2">
-                  <TrendingUp className="w-6 h-6 text-blue-500 mr-2" />
-                  <span className="text-blue-500 text-2xl font-bold">📊</span>
+                  <TrendingUp className="w-6 h-6 text-[#064354] mr-2" />
+                  <span className="text-[#064354] text-2xl font-bold">📊</span>
                 </div>
                 <h4 className="font-bold text-gray-900 mb-2">
                   55% Faster Time-to-Market
                 </h4>
-                <p className="text-gray-600 text-sm">
+                <p className="text-[#064354] text-sm">
                   Our streamlined processes and agile approach ensure your
                   projects go live faster, keeping you ahead of the competition.
                 </p>
@@ -136,13 +136,13 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
 
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="flex items-center mb-2">
-                  <Award className="w-6 h-6 text-blue-500 mr-2" />
-                  <span className="text-blue-500 text-2xl font-bold">🏆</span>
+                  <Award className="w-6 h-6 text-[#064354] mr-2" />
+                  <span className="text-[#064354] text-2xl font-bold">🏆</span>
                 </div>
-                <h4 className="font-bold text-gray-900 mb-2">
+                <h4 className="font-bold text-[#064354] mb-2">
                   End-to-End Services Under One Roof
                 </h4>
-                <p className="text-gray-600 text-sm">
+                <p className="text-[#064354] text-sm">
                   From ideation to deployment and support we manage the complete
                   development cycle with in-house experts.
                 </p>
@@ -150,13 +150,13 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
 
               <div className="bg-blue-50 p-4 rounded-lg">
                 <div className="flex items-center mb-2">
-                  <Users className="w-6 h-6 text-blue-500 mr-2" />
-                  <span className="text-blue-500 text-2xl font-bold">⭐</span>
+                  <Users className="w-6 h-6 text-[#064354] mr-2" />
+                  <span className="text-[#064354] text-2xl font-bold">⭐</span>
                 </div>
-                <h4 className="font-bold text-gray-900 mb-2">
+                <h4 className="font-bold text-[#064354] mb-2">
                   15000+ Clients. 20+ Years. 1000+ Developers.
                 </h4>
-                <p className="text-gray-600 text-sm">
+                <p className="text-[#064354] text-sm">
                   Trusted by businesses of all sizes to deliver measurable
                   outcomes — backed by decades of experience.
                 </p>
@@ -175,7 +175,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                   ))}
                 </div>
               </div>
-              <div className="text-sm text-gray-600 mb-2">
+              <div className="text-sm text-[#064354] mb-2">
                 Based on 512 reviews
               </div>
 
@@ -188,7 +188,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                 <p className="text-sm font-semibold text-gray-900 mb-1">
                   The Dotsquares team came on the jou...
                 </p>
-                <p className="text-xs text-gray-600">
+                <p className="text-xs text-[#064354]">
                   The Dotsquares team (Surbhi, Navdeep, Subhraj, Ravi and
                   Khushboo) have been brilliant to work with. They are...
                 </p>
@@ -199,10 +199,10 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
           {/* Right Side - Form */}
           <div>
             <div className="bg-gray-50 p-6 rounded-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-2">
+              <h3 className="text-2xl font-bold text-[#064354] mb-2">
                 Let's Turn Your Idea Into Reality
               </h3>
-              <p className="text-gray-600 mb-6">
+              <p className="text-[#064354] mb-6">
                 Whether you're scaling up or starting fresh, our experts are
                 ready to guide you through strategy, design, development, and
                 beyond. Reach out — we respond within 24 hours.
@@ -218,7 +218,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                       placeholder="Full Name*"
                       value={formData.fullName}
                       onChange={handleInputChange}
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      className="w-full p-3 border border-[#064354] rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                       required
                     />
                   </div>
@@ -229,7 +229,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                       placeholder="Phone Number*"
                       value={formData.phoneNumber}
                       onChange={handleInputChange}
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      className="w-full p-3 border border-[#064354] rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                       required
                     />
                   </div>
@@ -243,7 +243,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                       placeholder="Company Email*"
                       value={formData.companyEmail}
                       onChange={handleInputChange}
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      className="w-full p-3 border border-[#064354] rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                       required
                     />
                   </div>
@@ -254,7 +254,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                       placeholder="Company Name"
                       value={formData.companyName}
                       onChange={handleInputChange}
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
+                      className="w-full p-3 border border-[#064354] rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent"
                     />
                   </div>
                 </div>
@@ -265,7 +265,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                       name="industry"
                       value={formData.industry}
                       onChange={handleInputChange}
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white"
+                      className="w-full p-3 border border-[#064354] rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white"
                     >
                       <option value="">Industry</option>
                       <option value="healthcare">Healthcare</option>
@@ -282,7 +282,7 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                       name="budget"
                       value={formData.budget}
                       onChange={handleInputChange}
-                      className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white"
+                      className="w-full p-3 border border-[#064354] rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent bg-white"
                     >
                       <option value="">Budget</option>
                       <option value="under-10k">Under $10,000</option>
@@ -301,13 +301,13 @@ const ConsultationModal: React.FC<ConsultationModalProps> = ({
                     value={formData.projectBrief}
                     onChange={handleInputChange}
                     rows={4}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
+                    className="w-full p-3 border border-[#064354] rounded-lg focus:outline-none focus:ring-2 focus:ring-orange-500 focus:border-transparent resize-none"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full bg-blue-500 hover:bg-blue-600 text-white py-4 rounded-lg font-bold text-lg transition-colors duration-200"
+                  className="w-full bg-[#064354] hover:bg-[#0b5367] text-white py-4 rounded-lg font-bold text-lg transition-colors duration-200"
                 >
                   BOOK A FREE CONSULTATION
                 </button>

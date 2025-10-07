@@ -14,7 +14,7 @@ const SolutionsSection = () => {
         "Make informed choices using our Data Analytics and DevOps services.",
         "Avoid costly mistakes with our Technology Consulting, ensuring long-term success.",
       ],
-      icon: <Rocket className="w-6 h-6 text-blue-500" />,
+      icon: <Rocket className="w-6 h-6 text-[#064354]" />,
       button: "Explore More",
     },
     {
@@ -27,7 +27,7 @@ const SolutionsSection = () => {
         "Ensure exceptional performance with our thorough QA & Testing services.",
         "Unlock enhanced scalability, security, and cost-efficiency with Cloud Development.",
       ],
-      icon: <Building2 className="w-6 h-6 text-blue-500" />,
+      icon: <Building2 className="w-6 h-6 text-[#064354]" />,
       button: "Explore More",
     },
     {
@@ -40,7 +40,7 @@ const SolutionsSection = () => {
         "Adapt to project demands with our Staff Augmentation solutions.",
         "Expand your portfolio without in-house development through White Label services.",
       ],
-      icon: <Briefcase className="w-6 h-6 text-blue-500" />,
+      icon: <Briefcase className="w-6 h-6 text-[#064354]" />,
       button: "Explore More",
     },
   ];
@@ -49,7 +49,7 @@ const SolutionsSection = () => {
     <section className="w-full bg-white py-16 px-6 md:px-12 lg:px-20">
       {/* Section heading */}
       <div className="text-center mb-12">
-        <p className="text-blue-500 font-semibold uppercase tracking-wide">
+        <p className="text-[#064354] font-semibold uppercase tracking-wide">
           Solutions For All
         </p>
         <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mt-2">
@@ -81,12 +81,12 @@ const SolutionsSection = () => {
                   key={i}
                   className="flex items-start gap-2 text-gray-700 text-sm md:text-base"
                 >
-                  <span className="text-blue-500">›</span>
+                  <span className="text-[#064354]">›</span>
                   {point}
                 </li>
               ))}
             </ul>
-            <button className="mt-auto bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-md flex items-center justify-center gap-2 transition">
+            <button className="mt-auto bg-[#064354] hover:bg-[#064354] text-white font-semibold py-2 px-4 rounded-md flex items-center justify-center gap-2 transition">
               {item.button} <ArrowRight className="w-4 h-4" />
             </button>
           </div>

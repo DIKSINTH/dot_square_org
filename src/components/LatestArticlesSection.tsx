@@ -83,7 +83,7 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
         {/* Date */}
         <div className="flex items-center text-gray-500 text-sm mb-4">
           <svg
-            className="w-4 h-4 mr-1 text-blue-500"
+            className="w-4 h-4 mr-1 text-[#064354]"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -100,7 +100,7 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
         </div>
 
         {/* Title */}
-        <h3 className="text-xl font-bold text-gray-900 mb-3 transition-colors duration-300 group-hover:text-blue-600">
+        <h3 className="text-xl font-bold text-gray-900 mb-3 transition-colors duration-300 group-hover:text-[#064354]">
           {title}
         </h3>
 
@@ -108,7 +108,7 @@ const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
         <p className="text-gray-600 text-base mb-6">{excerpt}</p>
 
         {/* Read More Button */}
-        <div className="inline-flex items-center text-white bg-blue-500 px-6 py-2.5 text-sm font-medium transition-all duration-300 group-hover:bg-blue-600 group-hover:shadow-lg">
+        <div className="inline-flex items-center text-white bg-[#064354] px-6 py-2.5 text-sm font-medium transition-all duration-300 group-hover:bg-[#064354] group-hover:shadow-lg">
           Keep Reading
           <svg
             className="ml-2 w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
@@ -138,13 +138,13 @@ const LatestArticlesSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header/Title Section */}
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-sm uppercase text-blue-500 tracking-[0.25em] font-semibold mb-2">
+          <p className="text-sm uppercase text-[#064354] tracking-[0.25em] font-semibold mb-2">
             NEWS & INSIGHTS
           </p>
-          <h2 className="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-4">
+          <h2 className="text-4xl sm:text-5xl font-extrabold text-[#064354] mb-4">
             Latest Articles
           </h2>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-[#064354]">
             Stay updated with our latest news, insights, and technology trends.
           </p>
         </div>

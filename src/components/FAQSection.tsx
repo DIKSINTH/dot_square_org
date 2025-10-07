@@ -73,7 +73,7 @@ const AccordionItem: React.FC<{
         {/* Chevron Icon - Rotates based on open state */}
         <svg
           className={`w-6 h-6 text-gray-500 transition-transform duration-300 ${
-            isOpen ? "rotate-180 text-blue-500" : "rotate-0"
+            isOpen ? "rotate-180 text-[#064354]" : "rotate-0"
           }`}
           fill="none"
           stroke="currentColor"
@@ -124,10 +124,10 @@ const FAQSection: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         {/* Header/Title Section */}
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-sm uppercase text-blue-500 tracking-[0.25em] font-semibold mb-2">
+          <p className="text-sm uppercase text-[#064354] tracking-[0.25em] font-semibold mb-2">
             FAQ
           </p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#064354] mb-4">
             We're Here to Answer All Your Questions
           </h2>
         </div>
@@ -176,7 +176,7 @@ const FAQSection: React.FC = () => {
           {/* Talk to Us Button */}
           <a
             href="/contact" // Replace with actual contact link
-            className="inline-flex items-center text-white bg-blue-500 px-8 py-3 text-lg font-semibold rounded transition-all duration-300 hover:bg-blue-600"
+            className="inline-flex items-center text-white bg-[#064354] px-8 py-3 text-lg font-semibold rounded transition-all duration-300 hover:bg-blue-600"
           >
             Talk to Us
             <svg

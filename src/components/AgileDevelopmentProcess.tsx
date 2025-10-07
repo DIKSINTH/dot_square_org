@@ -193,13 +193,13 @@ const AgileDevelopmentProcess = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-12 md:mb-16">
-          <p className="text-sm font-semibold uppercase tracking-widest text-blue-500 mb-2">
+          <p className="text-sm font-semibold uppercase tracking-widest text-[#064354] mb-2">
             OTHER TECHNOLOGIES WE WORK ON
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#064354] mb-4">
             Our Agile Development Process
           </h2>
-          <p className="max-w-3xl mx-auto text-base sm:text-lg text-gray-700">
+          <p className="max-w-3xl mx-auto text-base sm:text-lg text-[#064354]">
             Companies employ developers from us because we have a proven track
             record of delivering high-quality projects on time.
           </p>
@@ -215,7 +215,7 @@ const AgileDevelopmentProcess = () => {
                 className={`py-4 px-2 lg:px-4 text-base font-semibold transition-colors duration-200 border-b-4 
                   ${
                     activeStep === step.id
-                      ? "text-gray-900 border-blue-500"
+                      ? "text-gray-900 border-[#064354]"
                       : "text-gray-500 border-transparent hover:text-gray-700 hover:border-gray-300"
                   }`}
               >
@@ -231,10 +231,10 @@ const AgileDevelopmentProcess = () => {
           <div className="hidden md:grid md:grid-cols-3 gap-8 p-6 lg:p-10 bg-white shadow-xl rounded-lg border border-gray-100">
             {/* Main Description Column */}
             <div className="col-span-1 border-r pr-6 border-gray-200">
-              <h3 className="text-3xl font-bold text-blue-500 mb-4 transition-all duration-300">
+              <h3 className="text-3xl font-bold text-[#064354] mb-4 transition-all duration-300">
                 {activeTitle}
               </h3>
-              <p className="text-gray-600 text-base leading-relaxed">
+              <p className="text-[#064354] text-base leading-relaxed">
                 {activeContent.mainDescription}
               </p>
             </div>
@@ -279,7 +279,7 @@ const AgileDevelopmentProcess = () => {
                     {step.mobileTitle}
                   </span>
                   {activeStep === step.id ? (
-                    <ChevronUp className="w-5 h-5 text-blue-500" />
+                    <ChevronUp className="w-5 h-5 text-[#064354]" />
                   ) : (
                     <ChevronDown className="w-5 h-5 text-gray-500" />
                   )}

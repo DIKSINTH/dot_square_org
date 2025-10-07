@@ -58,7 +58,7 @@ const ContactSection: React.FC = () => {
       value={formData[name] as string}
       onChange={handleChange}
       required={required}
-      className="w-full bg-white text-black p-4 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition duration-150 placeholder-gray-500"
+      className="w-full bg-white text-black p-4 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#064354] transition duration-150 placeholder-gray-500"
       style={{ borderRadius: 0 }} // Ensure sharp corners as in the image
     />
   );
@@ -70,7 +70,7 @@ const ContactSection: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16">
           {/* --- Left Column: Text Content --- */}
           <div className="text-white mb-12 lg:mb-0">
-            <p className="text-sm uppercase text-blue-500 tracking-[0.2em] font-semibold mb-4">
+            <p className="text-sm uppercase text-white tracking-[0.2em] font-semibold mb-4">
               CONTACT US
             </p>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">
@@ -136,7 +136,7 @@ const ContactSection: React.FC = () => {
                 <p className="text-sm text-gray-400">Or Reach Out To Us At</p>
                 <a
                   href="mailto:office@dotsquares.com"
-                  className="text-white text-xl font-bold hover:text-blue-500 transition-colors duration-200"
+                  className="text-white text-xl font-bold hover:text-[#064354] transition-colors duration-200"
                 >
                   office@dotsquares.com
                 </a>
@@ -170,7 +170,7 @@ const ContactSection: React.FC = () => {
                   onChange={handleChange}
                   rows={8} // Provides a large input area as seen in the image
                   required
-                  className="w-full bg-white text-black p-4 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-500 transition duration-150 placeholder-gray-500 resize-none"
+                  className="w-full bg-white text-black p-4 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#064354] transition duration-150 placeholder-gray-500 resize-none"
                   style={{ borderRadius: 0 }}
                 ></textarea>
               </div>
@@ -179,7 +179,7 @@ const ContactSection: React.FC = () => {
               <div>
                 <button
                   type="submit"
-                  className="w-full bg-black text-white border border-white text-lg font-medium py-3 tracking-wider transition-colors duration-300 hover:bg-orange-500 hover:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500"
+                  className="w-full bg-black text-white border border-white text-lg font-medium py-3 tracking-wider transition-colors duration-300 hover:bg-[#064354] hover:border-[#064354] focus:outline-none focus:ring-2 focus:ring-[#064354]"
                   style={{ borderRadius: 0 }}
                 >
                   BOOK A Free Consultation

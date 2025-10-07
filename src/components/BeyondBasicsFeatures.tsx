@@ -69,7 +69,7 @@ const IconGraph = ({ className = "h-6 w-6" }) => (
 const Checkmark = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-5 w-5 text-blue-500 flex-shrink-0"
+    className="h-5 w-5 text-[#064354] flex-shrink-0"
     viewBox="0 0 24 24"
     fill="none"
     stroke="currentColor"
@@ -183,13 +183,13 @@ const FeatureContent = ({ activeKey }) => {
     <div className="flex flex-col lg:flex-row bg-white rounded-lg shadow-lg overflow-hidden">
       {/* Text Content Area */}
       <div className="p-6 sm:p-10 lg:w-1/2 flex flex-col justify-center">
-        <span className="text-sm font-semibold uppercase tracking-wider text-blue-500 mb-1">
+        <span className="text-sm font-semibold uppercase tracking-wider text-[#064354] mb-1">
           TAILORED EXCELLENCE
         </span>
-        <h3 className="text-3xl font-bold text-gray-900 mb-4">
+        <h3 className="text-3xl font-bold text-[#064354] mb-4">
           {content.title}
         </h3>
-        <p className="text-gray-600 mb-6 text-base">{content.description}</p>
+        <p className="text-[#064354] mb-6 text-base">{content.description}</p>
 
         {/* Details Grid */}
         <div className="grid grid-cols-2 gap-4">
@@ -224,10 +224,10 @@ const BeyondBasicsFeatures = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16">
-          <span className="text-sm font-semibold uppercase tracking-wider text-blue-500">
+          <span className="text-sm font-semibold uppercase tracking-wider text-[#064354]">
             WE ARE THE EXPERTS
           </span>
-          <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900">
+          <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#064354]">
             We Go Beyond the Basics
           </h2>
         </div>

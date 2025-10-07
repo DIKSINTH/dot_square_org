@@ -148,7 +148,7 @@ const ServicesSection = () => {
                     <button className="px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 bg-transparent border-2 border-white text-white rounded-full text-sm sm:text-base font-medium hover:bg-white hover:text-gray-900 transition-all duration-300">
                       Learn More
                     </button>
-                    <button className="px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 bg-[#064354] text-white rounded-full text-sm sm:text-base font-medium hover:bg-orange-600 transition-all duration-300 flex items-center gap-2">
+                    <button className="px-4 sm:px-5 lg:px-6 py-2 sm:py-2.5 bg-[#064354] text-white rounded-full text-sm sm:text-base font-medium hover:bg-[#0b5063] transition-all duration-300 flex items-center gap-2">
                       Contact Us
                       <ArrowRight className="w-4 h-4" />
                     </button>

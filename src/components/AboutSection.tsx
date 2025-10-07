@@ -124,7 +124,7 @@ export default function AboutSection() {
           {/* Right Column - TechSquares */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h3 className="text-white text-sm font-semibold tracking-wider uppercase">
+              <h3 className="text-[#064354] text-sm font-semibold tracking-wider uppercase">
                 TECHSQUARES
               </h3>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">

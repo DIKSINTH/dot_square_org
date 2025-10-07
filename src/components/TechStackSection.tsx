@@ -323,13 +323,13 @@ const TechStackSection = () => {
     <section className="py-16 sm:py-20 lg:py-24 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         {/* Header */}
-        <span className="text-sm font-semibold uppercase tracking-wider text-blue-500">
+        <span className="text-sm font-semibold uppercase tracking-wider text-[#064354]">
           OTHER TECHNOLOGIES WE WORK ON
         </span>
-        <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 leading-tight">
+        <h2 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-[#064354] leading-tight">
           Tailored Technologies to Conquer Your Development Challenges
         </h2>
-        <p className="mt-4 text-base text-gray-600 max-w-2xl mx-auto">
+        <p className="mt-4 text-base text-[#064354] max-w-2xl mx-auto">
           Harness the power of our advanced technologies to elevate user
           interaction and drive engagement.
         </p>

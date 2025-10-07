@@ -13,6 +13,8 @@ import CaseStudiesSection from "../components/CaseStudiesSection.tsx";
 import ContactSection from "../components/ContactSection.tsx";
 import LatestArticlesSection from "../components/LatestArticlesSection.tsx";
 import FAQSection from "../components/FAQSection.tsx";
+import ClientTestimonials from "../components/ClientTestimonials.tsx";
+import IndustrySolutions from "../components/IndustrySolutions.tsx";
 
 const Home: React.FC = () => {
   return (
@@ -26,8 +28,10 @@ const Home: React.FC = () => {
       <AboutSection />
       <PartnersSection />
       <TechnologyStack />
+      <IndustrySolutions />
       <SolutionsSection />
       <CaseStudiesSection />
+      <ClientTestimonials />
       <ContactSection />
       <LatestArticlesSection />
       <FAQSection />

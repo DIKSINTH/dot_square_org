@@ -145,7 +145,7 @@ const ServiceCard = ({ service }: { service: Service }) => {
     <div
       className="group flex flex-col p-6 md:p-8 lg:p-10 border border-gray-100 rounded-lg shadow-sm bg-white 
                  hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer 
-                 hover:border-transparent hover:ring-2 hover:ring-blue-500" // Attractive hover effect
+                 hover:border-transparent hover:ring-2 hover:ring-[#064354]" // Attractive hover effect
     >
       {/* Title Section (Mimics the layout from the image) */}
       <div className="flex items-start mb-4">
@@ -153,17 +153,17 @@ const ServiceCard = ({ service }: { service: Service }) => {
         {/* Note: In a real app, replace this div with an actual <img> tag or an SVG component */}
         <div className="w-12 h-12 flex-shrink-0 mr-4 bg-orange-100 rounded-full flex items-center justify-center">
           {/* Using a simple placeholder text/icon for the sample image */}
-          <span className="text-blue-500 font-bold text-xl">S</span>
+          <span className="text-[#064354] font-bold text-xl">S</span>
           {/* Optional: Add an image tag here if you were fetching from an API */}
           {/* <img src={fetchImage(service.imageQuery)} alt={`${service.title} icon`} className="w-8 h-8"/> */}
         </div>
-        <h3 className="text-xl font-bold text-gray-800 leading-tight">
+        <h3 className="text-xl font-bold text-[#064354] leading-tight">
           {service.title}
         </h3>
       </div>
 
       {/* Description */}
-      <p className="text-gray-600 mb-6 flex-grow text-sm">
+      <p className="text-[#064354] mb-6 flex-grow text-sm">
         {service.description}
       </p>
 
@@ -172,7 +172,7 @@ const ServiceCard = ({ service }: { service: Service }) => {
         {service.details.map((detail, index) => (
           <div key={index} className="flex items-center">
             {/* The small, colored dot/pill effect from the image */}
-            <span className="inline-block h-2 w-2 mr-3 rounded-full bg-blue-400 flex-shrink-0"></span>
+            <span className="inline-block h-2 w-2 mr-3 rounded-full bg-[#064354] flex-shrink-0"></span>
             <span className="text-sm font-medium text-gray-700">{detail}</span>
           </div>
         ))}
@@ -181,7 +181,7 @@ const ServiceCard = ({ service }: { service: Service }) => {
       {/* Bottom Arrow/Link Indicator */}
       {/* Absolute positioning relative to the group container for the arrow at the bottom-right */}
       <div className="flex justify-end mt-auto pt-4">
-        <div className="p-3 rounded-full border border-gray-200 text-gray-500 group-hover:border-blue-500 group-hover:text-blue-500 transition duration-300 ease-in-out">
+        <div className="p-3 rounded-full border border-gray-200 text-gray-500 group-hover:border-[#064354] group-hover:text-[#064354] transition duration-300 ease-in-out">
           <ArrowRight />
         </div>
       </div>
@@ -195,7 +195,7 @@ const WebServicesGrid = () => {
     <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <span className="text-sm font-semibold uppercase tracking-wider text-blue-600">
+        <span className="text-sm font-semibold uppercase tracking-wider text-[#064354]">
           Services
         </span>
         <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900">
