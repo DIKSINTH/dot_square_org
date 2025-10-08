@@ -1,6 +1,6 @@
 import React, { FC, FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Code, Monitor, Shield, Settings, Headphones } from "lucide-react"; // Icons
+import { Smartphone, LayoutGrid, Sofa, Plug, Headphones } from "lucide-react"; // Icons
 
 const CommonForm: FC = () => {
   // ✅ Handle form submit (TypeScript safe)
@@ -21,32 +21,47 @@ const CommonForm: FC = () => {
           viewport={{ once: true }}
         >
           <p className="text-[#ffffff] font-semibold text-sm uppercase">
-            Web Development Solution
+            APP DEVELOPMENT SOLUTION
           </p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold">
-            Custom Website Development Services
+            Custom Mobile App Development Services
           </h2>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+            {/* Multi-Platform Deployment (Matching Phone icon) */}
             <div className="flex items-start gap-3">
-              <Code className="w-6 h-6 text-gray-400 mt-1" />
-              <p>Custom Web Design & Development</p>
+              <Smartphone className="w-6 h-6 text-gray-400 mt-1" />
+              <p>Multi-Platform Deployment</p>
             </div>
+
+            {/* Customizable User Interface (Matching Grid/Tiling icon) */}
             <div className="flex items-start gap-3">
-              <Monitor className="w-6 h-6 text-gray-400 mt-1" />
-              <p>Responsive and Mobile First Website</p>
+              <LayoutGrid className="w-6 h-6 text-gray-400 mt-1" />
+              <p>Customizable User Interface</p>
             </div>
-            <div className="flex items-start gap-3">
-              <Shield className="w-6 h-6 text-gray-400 mt-1" />
-              <p>Secure and Robust Development</p>
-            </div>
-            <div className="flex items-start gap-3">
-              <Settings className="w-6 h-6 text-gray-400 mt-1" />
-              <p>Integration and Migration Services</p>
-            </div>
+
+            {/* Regular Updates and Maintenance (Matching Headphones/Support icon) */}
             <div className="flex items-start gap-3">
               <Headphones className="w-6 h-6 text-gray-400 mt-1" />
-              <p>Ongoing Support and Maintenance</p>
+              <p>Regular Updates and Maintenance</p>
+            </div>
+
+            {/* Rapid Prototyping (Matching Chair/Furniture icon) */}
+            <div className="flex items-start gap-3">
+              <Sofa className="w-6 h-6 text-gray-400 mt-1" />
+              <p>Rapid Prototyping</p>
+            </div>
+
+            {/* Scalable Architecture (Matching Chair/Furniture icon with scaling arrows) */}
+            <div className="flex items-start gap-3">
+              <Sofa className="w-6 h-6 text-gray-400 mt-1" />
+              <p>Scalable Architecture</p>
+            </div>
+
+            {/* Seamless Integration with APIs (Matching Power/Plug icon) */}
+            <div className="flex items-start gap-3">
+              <Plug className="w-6 h-6 text-gray-400 mt-1" />
+              <p>Seamless Integration with APIs</p>
             </div>
           </div>
 
@@ -138,7 +153,7 @@ const CommonForm: FC = () => {
         viewport={{ once: true }}
       >
         <div>
-          <p className="text-3xl font-bold text-[#064354]">600+</p>
+          <p className="text-3xl font-bold text-[#064354]">180+</p>
           <p className="text-sm">In-House Web/App Developers</p>
         </div>
         <div>
@@ -146,8 +161,8 @@ const CommonForm: FC = () => {
           <p className="text-sm">Average Savings on Development Costs</p>
         </div>
         <div>
-          <p className="text-3xl font-bold text-[#064354]">14K+</p>
-          <p className="text-sm">Websites Developed in last 2 decades</p>
+          <p className="text-3xl font-bold text-[#064354]">2082+</p>
+          <p className="text-sm">Mobile Apps Published</p>
         </div>
       </motion.div>
     </section>

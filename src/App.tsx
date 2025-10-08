@@ -5,6 +5,7 @@ import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.tsx";
 import PromotionalBanner from "./components/PromotionalBanner.tsx";
 import WebDevelopment from "./pages/WebDevelopment.tsx";
+import AppDevelopment from "./pages/AppDevelopment.tsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/websitedevelopment" element={<WebDevelopment />} />
+          <Route path="/mobileappdevelopment" element={<AppDevelopment />} />
         </Routes>
         <Footer />
       </div>
