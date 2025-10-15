@@ -1,6 +1,6 @@
 import React from "react";
 import CommonForm from "../components/WebDevelopment/CommonForm.tsx";
-import AchievementsSection from "../components/WebDevelopment/AchievementsSection.tsx";
+import AchievementsSection from "../components/AchievementsSection.tsx";
 import WebServicesGrid from "../components/WebDevelopment/WebServicesGrid.tsx";
 import CaptivatingPresenceBanner from "../components/WebDevelopment/CaptivatingPresenceBanner.tsx";
 import BeyondBasicsFeatures from "../components/WebDevelopment/BeyondBasicsFeatures.tsx";
@@ -9,7 +9,7 @@ import DotSquaresAdvantages from "../components/DotSquaresAdvantages.tsx";
 import HiringAssistanceSection from "../components/HiringAssistanceSection";
 import AgileDevelopmentProcess from "../components/WebDevelopment/AgileDevelopmentProcess.tsx";
 import ClientRelationshipsSection from "../components/ClientRelationshipsSection";
-import Achievements from "../components/Achievements";
+import Achievements from "../components/Home/Achievements.tsx";
 import FAQ from "../components/WebDevelopment/FAQ.tsx";
 import PartnerLogos from "../components/PartnersLogos.tsx";
 import Portfolio from "../components/WebDevelopment/Portfolio.tsx";

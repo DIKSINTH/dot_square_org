@@ -18,8 +18,17 @@ const ArrowRight = () => (
   </svg>
 );
 
-// Data structure to hold all the service details
-const services = [
+// Define the type for a service
+type Service = {
+  title: string;
+  description: string;
+  imageQuery: string; // Placeholder for potential image use
+  details: string[];
+};
+
+// Data structure to hold all the service details from the attached Web Development images
+const services: Service[] = [
+  // --- Services from image_4a709a.png ---
   {
     title: "Website Design & Development",
     description:
@@ -35,7 +44,7 @@ const services = [
   {
     title: "CMS Development",
     description:
-      "Empower yourself to easily update and manage your website content with a user-friendly CMS. We'll choose the perfect platform based on your needs, whether it's WordPress, Drupal or a custom solution.",
+      "Empower yourself to easily update and manage your website content with a user-friendly CMS. We'll choose the perfect platform based on your needs, whether it's WordPress, Drupal, or a custom solution.",
     imageQuery: "CMS development icon",
     details: [
       "Multi-User Support",
@@ -56,6 +65,7 @@ const services = [
       "Real-Time Data Access",
     ],
   },
+  // --- Services from image_4a7041.png ---
   {
     title: "Web 3.0 Development",
     description:
@@ -71,7 +81,7 @@ const services = [
   {
     title: "AI/ML Web Solutions",
     description:
-      "Integrate cutting-edge Artificial Intelligence and Machine Learning into your web app to automate tasks, personalize user experiences, and gain valuable insights from your data.",
+      "Integrate cutting-edge Artificial Intelligence and Machine Learning into your web app to automate tasks, personalise user experiences, and gain valuable insights from your data.",
     imageQuery: "AI ML web solutions icon",
     details: [
       "Natural Language Processing",
@@ -92,6 +102,7 @@ const services = [
       "Post-Launch support",
     ],
   },
+  // --- Services from image_4a6fe9.png ---
   {
     title: "Headless Development",
     description:
@@ -130,58 +141,47 @@ const services = [
   },
 ];
 
-// Define the type for a service
-type Service = {
-  title: string;
-  description: string;
-  imageQuery: string;
-  details: string[];
-};
-
-// Service Card Component
+// Service Card Component (Kept the styling consistent with the previous version and images)
 const ServiceCard = ({ service }: { service: Service }) => {
   return (
     // Card container with responsive padding, border, shadow, and attractive hover effect
     <div
       className="group flex flex-col p-6 md:p-8 lg:p-10 border border-gray-100 rounded-lg shadow-sm bg-white 
-                 hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer 
-                 hover:border-transparent hover:ring-2 hover:ring-[#064354]" // Attractive hover effect
+             hover:shadow-xl transition-all duration-300 ease-in-out cursor-pointer 
+             hover:border-transparent hover:ring-2 hover:ring-[#064354]" // Attractive hover effect
     >
       {/* Title Section (Mimics the layout from the image) */}
       <div className="flex items-start mb-4">
-        {/* Placeholder for the Image/Icon - Use a bright color like orange for a sample internet image */}
-        {/* Note: In a real app, replace this div with an actual <img> tag or an SVG component */}
-        <div className="w-12 h-12 flex-shrink-0 mr-4 bg-orange-100 rounded-full flex items-center justify-center">
-          {/* Using a simple placeholder text/icon for the sample image */}
-          <span className="text-[#064354] font-bold text-xl">S</span>
-          {/* Optional: Add an image tag here if you were fetching from an API */}
-          {/* <img src={fetchImage(service.imageQuery)} alt={`${service.title} icon`} className="w-8 h-8"/> */}
+        {/* The div with orange background is for the small line above the title in the image */}
+        <div className="flex flex-col">
+          <div className="w-10 h-1 flex-shrink-0 mb-4 bg-["></div>
+          <h3 className="text-xl font-bold text-gray-900 leading-tight">
+            {service.title}
+          </h3>
         </div>
-        <h3 className="text-xl font-bold text-[#064354] leading-tight">
-          {service.title}
-        </h3>
       </div>
 
       {/* Description */}
-      <p className="text-[#064354] mb-6 flex-grow text-sm">
+      <p className="text-gray-700 mb-6 flex-grow text-sm">
         {service.description}
       </p>
 
-      {/* Details/Bullet Points */}
-      <div className="space-y-2 mb-6">
+      {/* Details/Pill Buttons (Mimics the highlighted background detail style from the image) */}
+      <div className="space-y-3 mb-6">
         {service.details.map((detail, index) => (
-          <div key={index} className="flex items-center">
-            {/* The small, colored dot/pill effect from the image */}
-            <span className="inline-block h-2 w-2 mr-3 rounded-full bg-[#064354] flex-shrink-0"></span>
-            <span className="text-sm font-medium text-gray-700">{detail}</span>
+          <div
+            key={index}
+            // Pill-like design with soft orange background
+            className="inline-block px-4 py-2 text-sm font-medium text-gray-800 bg-orange-50 rounded-full shadow-sm"
+          >
+            {detail}
           </div>
         ))}
       </div>
 
-      {/* Bottom Arrow/Link Indicator */}
-      {/* Absolute positioning relative to the group container for the arrow at the bottom-right */}
+      {/* Bottom Arrow/Link Indicator (Mimics the circled arrow) */}
       <div className="flex justify-end mt-auto pt-4">
-        <div className="p-3 rounded-full border border-gray-200 text-gray-500 group-hover:border-[#064354] group-hover:text-[#064354] transition duration-300 ease-in-out">
+        <div className="p-3 rounded-full border border-gray-200 text-gray-500 hover:text-white hover:bg-[#064354] transition duration-300 ease-in-out">
           <ArrowRight />
         </div>
       </div>
@@ -192,11 +192,11 @@ const ServiceCard = ({ service }: { service: Service }) => {
 // Main Component
 const WebServicesGrid = () => {
   return (
-    <div className="bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
-      {/* Section Header */}
-      <div className="text-center mb-12">
+    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+      {/* Section Header (Updated from image_4a709a.png) */}
+      <div className="text-center mb-12 max-w-4xl mx-auto">
         <span className="text-sm font-semibold uppercase tracking-wider text-[#064354]">
-          Services
+          SERVICES
         </span>
         <h1 className="mt-2 text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900">
           Customized Web Development Services for Your Success
@@ -204,11 +204,6 @@ const WebServicesGrid = () => {
       </div>
 
       {/* Grid Layout with Responsiveness */}
-      {/* The grid is set up to display:
-          - 1 column on extra small screens (default)
-          - 2 columns on tablets (sm:grid-cols-2 or md:grid-cols-2 depending on break point preference)
-          - 3 columns on desktops (lg:grid-cols-3)
-      */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {services.map((service, index) => (
           <ServiceCard key={index} service={service} />

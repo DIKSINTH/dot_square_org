@@ -60,7 +60,7 @@ const PartnersSection = () => {
         <button
           onClick={() => setActiveTab("partners")}
           aria-pressed={activeTab === "partners"}
-          className={`px-6 py-2 rounded-full font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-400 ${
+          className={`px-6 py-2 rounded-full font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#064354] ${
             activeTab === "partners"
               ? "bg-black text-white"
               : "bg-gray-100 text-gray-900 hover:bg-gray-200"
@@ -72,7 +72,7 @@ const PartnersSection = () => {
         <button
           onClick={() => setActiveTab("awards")}
           aria-pressed={activeTab === "awards"}
-          className={`px-6 py-2 rounded-full font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-400 ${
+          className={`px-6 py-2 rounded-full font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#064354] ${
             activeTab === "awards"
               ? "bg-black text-white"
               : "bg-gray-100 text-gray-900 hover:bg-gray-200"

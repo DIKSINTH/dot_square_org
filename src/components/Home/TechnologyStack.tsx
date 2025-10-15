@@ -231,7 +231,7 @@ const TechnologyStack = () => {
         </div>
 
         <div className="flex justify-center">
-          <button className="flex items-center gap-2 bg-transparent text-white px-8 py-4 rounded-lg font-semibold text-lg border-2 border-white hover:bg-white hover:text-black transition-all duration-300 group">
+          <button className="flex items-center gap-2 bg-transparent text-white px-8 py-4 rounded-lg font-semibold text-lg border-2 border-white hover:bg-[#064354] hover:text-black transition-all duration-300 group">
             Book a FREE Consultation
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>

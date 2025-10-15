@@ -278,7 +278,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-white text-green relative">
+    <header className="fixed top-0 w-full bg-white text-[#064354] shadow-md z-50">
       {/* Top Bar with Phone Numbers */}
       <div className="bg-white border-b border-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -288,15 +288,15 @@ const Header = () => {
                 href="tel:+13015639488"
                 className="hover:text-[#064354] transition-colors hidden md:inline"
               >
-                <span className="text-[#064354] font-semibold">US</span> +1 301
-                563 9488
+                <span className="text-[#064354] font-semibold">AUS</span> +61
+                439859700
               </a>
               <a
                 href="tel:+919829029555"
                 className="hover:text-[#064354] transition-colors hidden lg:inline"
               >
                 <span className="text-[#064354] font-semibold">IND</span> +91
-                98290 29555
+                8122552280
               </a>
             </div>
           </div>
@@ -309,15 +309,15 @@ const Header = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center gap-2">
-              <img src={img} alt="Company Logo" className="h-8 w-auto" />
+              <img src={img} alt="Company Logo" className="h-14 w-auto" />
             </div>
           </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2">
+          {/* Desktop Navigation - Increased spacing to prevent wrapping */}
+          <nav className="hidden lg:flex items-center space-x-4 xl:space-x-6">
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
+                className="flex items-center gap-1 px-2 py-2 text-sm hover:text-[#064354] transition-colors whitespace-nowrap"
                 onMouseEnter={() => setActiveDropdown("services")}
               >
                 Services <ChevronDown className="w-4 h-4" />
@@ -325,7 +325,7 @@ const Header = () => {
               {activeDropdown === "services" && (
                 <div
                   className="absolute left-0 top-full pt-2 w-screen max-w-5xl -ml-32 z-50"
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseLeave={() => setActiveDropdown(null)} // Fix 1: Closes when leaving the dropdown area
                 >
                   <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-8">
                     <div className="grid grid-cols-4 gap-8">
@@ -425,7 +425,7 @@ const Header = () => {
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
+                className="flex items-center gap-1 px-2 py-2 text-sm hover:text-[#064354] transition-colors whitespace-nowrap"
                 onMouseEnter={() => setActiveDropdown("cloud")}
               >
                 Cloud <ChevronDown className="w-4 h-4" />
@@ -433,7 +433,7 @@ const Header = () => {
               {activeDropdown === "cloud" && (
                 <div
                   className="absolute left-0 top-full pt-2 w-64 z-50"
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseLeave={() => setActiveDropdown(null)} // Fix 1: Closes when leaving the dropdown area
                 >
                   <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-6">
                     <ul className="space-y-3">
@@ -455,7 +455,7 @@ const Header = () => {
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
+                className="flex items-center gap-1 px-2 py-2 text-sm hover:text-[#064354] transition-colors whitespace-nowrap"
                 onMouseEnter={() => setActiveDropdown("dataai")}
               >
                 Data & AI <ChevronDown className="w-4 h-4" />
@@ -463,7 +463,7 @@ const Header = () => {
               {activeDropdown === "dataai" && (
                 <div
                   className="absolute left-0 top-full pt-2 w-screen max-w-3xl -ml-32 z-50"
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseLeave={() => setActiveDropdown(null)} // Fix 1: Closes when leaving the dropdown area
                 >
                   <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-8">
                     <div className="grid grid-cols-2 gap-8">
@@ -518,7 +518,7 @@ const Header = () => {
             </div>
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
+                className="flex items-center gap-1 px-2 py-2 text-sm hover:text-[#064354] transition-colors whitespace-nowrap"
                 onMouseEnter={() => setActiveDropdown("security")}
               >
                 Security <ChevronDown className="w-4 h-4" />
@@ -526,7 +526,7 @@ const Header = () => {
               {activeDropdown === "security" && (
                 <div
                   className="absolute left-0 top-full pt-2 w-72 z-50"
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseLeave={() => setActiveDropdown(null)} // Fix 1: Closes when leaving the dropdown area
                 >
                   <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-6">
                     <ul className="space-y-3">
@@ -548,7 +548,7 @@ const Header = () => {
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
+                className="flex items-center gap-1 px-2 py-2 text-sm hover:text-[#064354] transition-colors whitespace-nowrap"
                 onMouseEnter={() => setActiveDropdown("industries")}
               >
                 Industries <ChevronDown className="w-4 h-4" />
@@ -556,7 +556,7 @@ const Header = () => {
               {activeDropdown === "industries" && (
                 <div
                   className="absolute left-0 top-full pt-2 w-screen max-w-4xl -ml-64 z-50"
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseLeave={() => setActiveDropdown(null)} // Fix 1: Closes when leaving the dropdown area
                 >
                   <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-8">
                     <div className="grid grid-cols-4 gap-4">
@@ -584,14 +584,14 @@ const Header = () => {
 
             <a
               href="#"
-              className="px-3 py-2 text-sm hover:text-[#064354] transition-colors"
+              className="px-2 py-2 text-sm hover:text-[#064354] transition-colors whitespace-nowrap"
             >
               On-Demand Developer
             </a>
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
+                className="flex items-center gap-1 px-2 py-2 text-sm hover:text-[#064354] transition-colors whitespace-nowrap"
                 onMouseEnter={() => setActiveDropdown("technologies")}
               >
                 Technologies <ChevronDown className="w-4 h-4" />
@@ -599,7 +599,7 @@ const Header = () => {
               {activeDropdown === "technologies" && (
                 <div
                   className="absolute left-0 top-full pt-2 w-screen max-w-6xl -ml-96 z-50"
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseLeave={() => setActiveDropdown(null)} // Fix 1: Closes when leaving the dropdown area
                 >
                   <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-8">
                     <div className="grid grid-cols-3 gap-8">
@@ -813,7 +813,7 @@ const Header = () => {
 
             <div className="relative group">
               <button
-                className="flex items-center gap-1 px-3 py-2 text-sm hover:text-[#064354] transition-colors"
+                className="flex items-center gap-1 px-2 py-2 text-sm hover:text-[#064354] transition-colors whitespace-nowrap"
                 onMouseEnter={() => setActiveDropdown("success")}
               >
                 Success Stories <ChevronDown className="w-4 h-4" />
@@ -821,7 +821,7 @@ const Header = () => {
               {activeDropdown === "success" && (
                 <div
                   className="absolute left-0 top-full pt-2 w-48 z-50"
-                  onMouseLeave={() => setActiveDropdown(null)}
+                  onMouseLeave={() => setActiveDropdown(null)} // Fix 1: Closes when leaving the dropdown area
                 >
                   <div className="bg-white border border-gray-800 rounded-lg shadow-2xl p-4">
                     <ul className="space-y-3">

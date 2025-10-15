@@ -1,6 +1,6 @@
 import React from "react";
 import { ArrowRight } from "lucide-react";
-
+import bgImage from "../../../public/images/bg-image.jpg";
 const Hero = () => {
   const services = [
     { icon: "💻", name: "Software Development", nav: "/softwaredevelopment" },
@@ -18,14 +18,13 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative min-h-screen bg-gray-900 text-white overflow-hidden">
+    <section className="relative min-h-screen bg-gray-900 text-white overflow-hidden mt-20">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 bg-black opacity-60"></div>
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
         style={{
-          backgroundImage:
-            "url('https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')",
+          backgroundImage: `url(${bgImage})`, // ✅ Correct syntax using backticks
         }}
       ></div>
 

@@ -13,7 +13,7 @@ import ContactSection from "../components/Home/ContactSection.tsx";
 import LatestArticlesSection from "../components/Home/LatestArticlesSection.tsx";
 import FAQSection from "../components/Home/FAQSection.tsx";
 import ClientTestimonials from "../components/Home/ClientTestimonials.tsx";
-import IndustrySolutions from "../components/Home/IndustrySolutions.tsx";
+import IndustrySlide from "../components/Home/IndustrySlide.tsx";
 import PartnersLogos from "../components/PartnersLogos.tsx";
 
 const Home: React.FC = () => {
@@ -28,7 +28,7 @@ const Home: React.FC = () => {
       <AboutSection />
       <PartnersSection />
       <TechnologyStack />
-      <IndustrySolutions />
+      <IndustrySlide />
       <SolutionsSection />
       <CaseStudiesSection />
       <ClientTestimonials />

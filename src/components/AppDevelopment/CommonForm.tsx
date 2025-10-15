@@ -10,7 +10,7 @@ const CommonForm: FC = () => {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-12 px-4 sm:px-6 md:px-12 lg:px-20">
+    <section className="bg-gray-900 mt-20 text-white py-12 px-4 sm:px-6 md:px-12 lg:px-20 ">
       <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-12">
         {/* Left Section - Features */}
         <motion.div
